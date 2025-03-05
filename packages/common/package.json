@@ -15,9 +15,6 @@
   "scripts": {
     "build": "tsc"
   },
-  "devDependencies": {
-    "typescript": "^5.8.2"
-  },
   "files": [
     "dist/**/*",
     "lib/**/*",

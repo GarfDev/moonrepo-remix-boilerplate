@@ -5,7 +5,7 @@
     "lib": ["esnext", "dom"],
     "module": "nodenext",
     "moduleResolution": "nodenext",
-    "target": "ES5",
+    "target": "es2022",
     "composite": true,
     "declaration": true,
     "declarationMap": true,

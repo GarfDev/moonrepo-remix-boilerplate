@@ -2,6 +2,7 @@ import { vitePlugin as remix } from '@remix-run/dev';
 import { defineConfig } from 'vite';
 import path from 'path';
 import tsconfigPaths from 'vite-tsconfig-paths';
+import { remixPWA } from '@remix-pwa/dev';
 
 declare module '@remix-run/dev' {
   interface Future {
@@ -37,5 +38,6 @@ export default defineConfig({
       },
     },
     tsconfigPaths(),
+    remixPWA(),
   ],
 });

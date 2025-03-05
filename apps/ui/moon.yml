@@ -18,6 +18,7 @@ tasks:
     outputs:
       - '.cache'
       - 'build'
+    local: true
 
   dev:
     # Can't use `remix dev` because it can't find npm bins correctly.
