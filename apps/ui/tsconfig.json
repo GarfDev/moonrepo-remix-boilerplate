@@ -1,37 +1,19 @@
 {
-  "exclude": [".cache", "build", "public"],
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "**/.server/**/*.ts",
-    "**/.server/**/*.tsx",
-    "**/.client/**/*.ts",
-    "**/.client/**/*.tsx",
-    "remix.env.d.ts"
-  ],
+  "extends": "../../tsconfig.options.json",
   "compilerOptions": {
-    "lib": ["DOM", "DOM.Iterable", "ES2022"],
-    "types": ["@remix-run/node", "vite/client"],
-    "isolatedModules": true,
-    "esModuleInterop": true,
+    "outDir": "../../.moon/cache/types/apps/ui",
+    "baseUrl": ".",
+    "emitDeclarationOnly": false,
     "jsx": "react-jsx",
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "resolveJsonModule": true,
-    "target": "ES2022",
-    "strict": true,
-    "allowJs": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "baseUrl": ".",
+    "noEmit": true,
     "paths": {
       "~/*": ["./app/*"]
-    },
-
-    // Vite takes care of building everything, not tsc.
-    "noEmit": true
+    }
   },
-
+  "include": [".eslintrc.js", "remix.config.js", "remix.env.d.ts", "app/**/*"],
   "references": [
     {
       "path": "../../packages/common"

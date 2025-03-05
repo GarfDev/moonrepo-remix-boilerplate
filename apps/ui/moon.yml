@@ -1,16 +1,26 @@
-# Inherit tasks from the `remix` preset
-# https://github.com/moonrepo/moon-configs
-tags: ['frontend', 'remix']
 type: 'application'
-language: 'typescript'
+
+fileGroups:
+  app:
+    - 'remix.env.d.ts'
+    - 'vite.config.*'
+  sources:
+    - 'app/**/*'
+    - 'public/**/*'
+    - 'types/**/*'
 
 tasks:
-  dev:
-    command: vite
-    args: '--port 3000'
+  build:
+    command: 'vite build'
     inputs:
+      - '@group(app)'
       - '@group(sources)'
+    outputs:
+      - '.cache'
+      - 'build'
 
-    options:
-      runInCI: false
-      outputStyle: 'stream'
+  dev:
+    # Can't use `remix dev` because it can't find npm bins correctly.
+    # It requires Node's module resolution.
+    command: 'vite dev'
+    local: true

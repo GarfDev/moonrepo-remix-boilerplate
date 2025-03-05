@@ -1,7 +1,10 @@
-tags: ['library', 'types']
 type: 'library'
-language: 'typescript'
+
+workspace:
+  inheritedTasks:
+    exclude: ['build']
+
 tasks:
-  build:
-    command: tsc
-    args: ['--project', 'tsconfig.json']
+  typecheck:
+    outputs:
+      - 'lib'

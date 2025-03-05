@@ -3,20 +3,13 @@ import { defineConfig } from 'vite';
 import path from 'path';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
-declare module '@remix-run/node' {
+declare module '@remix-run/dev' {
   interface Future {
     v3_singleFetch: true;
   }
 }
 
 export default defineConfig({
-  resolve: {
-    alias: {
-      '@acau/types': path.join(__dirname, '../packages/types/src'),
-      '@acau/common': path.join(__dirname, '../packages/common/src'),
-    },
-  },
-
   plugins: [
     remix({
       future: {

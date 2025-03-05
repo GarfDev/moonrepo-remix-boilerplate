@@ -12,6 +12,11 @@
 
 ## build
 dist
+lib
 
 # node
 node_modules
+
+# Build cache manifests
+*.tsbuildinfo
+
