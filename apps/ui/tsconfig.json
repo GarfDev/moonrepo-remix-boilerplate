@@ -30,5 +30,14 @@
 
     // Vite takes care of building everything, not tsc.
     "noEmit": true
-  }
+  },
+
+  "references": [
+    {
+      "path": "../../packages/common"
+    },
+    {
+      "path": "../../packages/types"
+    }
+  ]
 }

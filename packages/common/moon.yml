@@ -1,8 +1,9 @@
 tags: ['library', 'common']
-
+type: 'library'
 language: 'typescript'
 
 tasks:
   build:
     command: tsc
     args: ['--project', 'tsconfig.json']
+    toolchain: 'node'

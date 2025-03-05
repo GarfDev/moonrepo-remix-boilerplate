@@ -1,5 +1,6 @@
 tags: ['library', 'types']
-
+type: 'library'
+language: 'typescript'
 tasks:
   build:
     command: tsc

@@ -1,5 +1,6 @@
 import { vitePlugin as remix } from '@remix-run/dev';
 import { defineConfig } from 'vite';
+import path from 'path';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
 declare module '@remix-run/node' {
@@ -9,6 +10,13 @@ declare module '@remix-run/node' {
 }
 
 export default defineConfig({
+  resolve: {
+    alias: {
+      '@acau/types': path.join(__dirname, '../packages/types/src'),
+      '@acau/common': path.join(__dirname, '../packages/common/src'),
+    },
+  },
+
   plugins: [
     remix({
       future: {
