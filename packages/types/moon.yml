@@ -1,0 +1,6 @@
+tags: ['library', 'types']
+
+tasks:
+  build:
+    command: tsc
+    args: ['--project', 'tsconfig.json']

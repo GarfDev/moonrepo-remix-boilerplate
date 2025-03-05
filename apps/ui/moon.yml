@@ -1,0 +1,13 @@
+# Inherit tasks from the `remix` preset
+# https://github.com/moonrepo/moon-configs
+tags: ['frontend', 'remix']
+
+language: 'typescript'
+
+tasks:
+  dev:
+    command: vite
+    args: '--port 3000'
+    options:
+      runInCI: false
+      outputStyle: 'stream'
