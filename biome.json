@@ -7,7 +7,7 @@
   },
   "files": {
     "ignoreUnknown": true,
-    "ignore": ["**/*.js"]
+    "ignore": ["**/*.js", "build"]
   },
 
   "formatter": {
