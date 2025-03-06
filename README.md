@@ -2,8 +2,6 @@
 
 This repository (`moonrepo-remix-boilerplate`) is structured as a monorepo specifically designed for Remix applications, using **MoonRepo** for task management, **Biome** for linting, **pnpm** for package management, and several other powerful development tools. This Boilerplate is still in active development state, feel free to open an issue if you encounter any problems.
 
----
-
 ## 📌 Overview
 
 - **Framework**: Remix
@@ -13,8 +11,6 @@ This repository (`moonrepo-remix-boilerplate`) is structured as a monorepo speci
 - **Build Tool**: Packemon, Vite
 - **Testing**: Jest
 - **Languages**: TypeScript
-
----
 
 ## 🛠 Prerequisites
 
