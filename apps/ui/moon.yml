@@ -1,23 +1,30 @@
-type: "application"
+type: 'application'
 
 fileGroups:
   sources:
-    - "app/**/*"
-    - "types/**/*"
+    - 'app/**/*'
+    - 'types/**/*'
 
 tasks:
   build:
-    command: "vite build"
+    command: 'remix vite:build'
+    deps:
+      - 'common:build'
+      - 'types:typecheck'
     inputs:
-      - "@group(app)"
-      - "@group(sources)"
+      - '@group(app)'
+      - '@group(sources)'
     outputs:
-      - ".cache"
-      - "build"
-    local: true
+      - '.cache'
+      - 'build'
 
   dev:
     # Can't use `remix dev` because it can't find npm bins correctly.
     # It requires Node's module resolution.
-    command: "vite dev"
-    local: true
+    command: 'vite dev'
+    deps:
+      - 'common:build'
+      - 'types:typecheck'
+
+  start:
+    command: 'remix-serve ./build/server/index.js'
