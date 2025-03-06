@@ -5,10 +5,7 @@
   "scripts": {
     "build": "tsc"
   },
-  "files": [
-    "lib/**/*",
-    "src/**/*"
-  ],
+  "files": ["lib/**/*", "src/**/*"],
   "exports": {
     "./package.json": "./package.json",
     "./*": {

@@ -1,9 +1,9 @@
-import type { MetaFunction } from "@remix-run/node";
+import type { MetaFunction } from '@remix-run/node';
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: 'New Remix App' },
+    { name: 'description', content: 'Welcome to Remix!' },
   ];
 };
 
@@ -55,8 +55,8 @@ export default function Index() {
 
 const resources = [
   {
-    href: "https://remix.run/start/quickstart",
-    text: "Quick Start (5 min)",
+    href: 'https://remix.run/start/quickstart',
+    text: 'Quick Start (5 min)',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -65,6 +65,7 @@ const resources = [
         viewBox="0 0 20 20"
         fill="none"
         className="stroke-gray-600 group-hover:stroke-current dark:stroke-gray-300"
+        role="graphics-symbol"
       >
         <path
           d="M8.51851 12.0741L7.92592 18L15.6296 9.7037L11.4815 7.33333L12.0741 2L4.37036 10.2963L8.51851 12.0741Z"
@@ -76,8 +77,8 @@ const resources = [
     ),
   },
   {
-    href: "https://remix.run/start/tutorial",
-    text: "Tutorial (30 min)",
+    href: 'https://remix.run/start/tutorial',
+    text: 'Tutorial (30 min)',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -85,6 +86,7 @@ const resources = [
         height="20"
         viewBox="0 0 20 20"
         fill="none"
+        role="graphics-symbol"
         className="stroke-gray-600 group-hover:stroke-current dark:stroke-gray-300"
       >
         <path
@@ -97,8 +99,8 @@ const resources = [
     ),
   },
   {
-    href: "https://remix.run/docs",
-    text: "Remix Docs",
+    href: 'https://remix.run/docs',
+    text: 'Remix Docs',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -106,6 +108,7 @@ const resources = [
         height="20"
         viewBox="0 0 20 20"
         fill="none"
+        role="graphics-symbol"
         className="stroke-gray-600 group-hover:stroke-current dark:stroke-gray-300"
       >
         <path
@@ -117,8 +120,8 @@ const resources = [
     ),
   },
   {
-    href: "https://rmx.as/discord",
-    text: "Join Discord",
+    href: 'https://rmx.as/discord',
+    text: 'Join Discord',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -126,6 +129,7 @@ const resources = [
         height="20"
         viewBox="0 0 24 20"
         fill="none"
+        role="graphics-symbol"
         className="stroke-gray-600 group-hover:stroke-current dark:stroke-gray-300"
       >
         <path

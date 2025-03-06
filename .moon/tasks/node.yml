@@ -12,7 +12,6 @@ fileGroups:
   configs:
     - '*.{js,json,yml,yaml}'
   sources:
-    - 'public/**/*'
     - 'src/**/*'
     - 'types/**/*'
   tests:
@@ -30,35 +29,28 @@ tasks:
   # https://moonrepo.dev/docs/guides/examples/prettier
   format:
     command:
-      - 'prettier'
-      - '--ignore-path'
+      - 'biome'
+      - 'lint'
+      - '--write'
       - '@in(0)'
-      - '--check'
-      - '.'
     inputs:
-      - '/.prettierignore'
-      - '/prettier.config.js'
       - '@group(app)'
       - '@globs(sources)'
-      - '@globs(tests)'
-      - '@globs(configs)'
-      - '**/*.{md,mdx}'
+      - '!**/*.js'
 
   format-write:
     command:
-      - 'prettier'
-      - '--ignore-path'
-      - '@in(0)'
+      - 'biome'
+      - 'format'
       - '--write'
-      - '.'
+      - '@in(0)'
     inputs:
-      - '/.prettierignore'
-      - '/prettier.config.js'
       - '@group(app)'
       - '@globs(sources)'
       - '@globs(tests)'
-      - '@globs(configs)'
       - '**/*.{md,mdx}'
+      - '!**/*.js'
+
     local: true
 
   # https://moonrepo.dev/docs/guides/examples/eslint

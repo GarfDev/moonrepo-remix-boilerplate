@@ -49,7 +49,7 @@ export default function App() {
 
   useEffect(() => {
     revalidator.revalidate();
-  }, []);
+  }, [revalidator]);
 
   return <Outlet />;
 }
