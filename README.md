@@ -16,25 +16,25 @@ This repository (`moonrepo-remix-boilerplate`) is structured as a monorepo speci
 
 This progress is only tested on macOS. other platforms pls follow the [official docs](https://moonrepo.dev/docs/install).
 
-- Step 1: Clone this repository
+#### Step 1: Clone this repository
 
 ```bash
 git clone https://github.com/GarfDev/moonrepo-remix-boilerplate.git
 ```
 
-- Step 2: Install moonrepo CLI tool
+#### Step 2: Install moonrepo CLI tool
 
 ```bash
 bash <(curl -fsSL https://moonrepo.dev/install/moon.sh)
 ```
 
-- Step 3: Add moon to CLI Path
+#### Step 3: Add moon to CLI Path
 
 ```bash
 echo 'export PATH="$HOME/.moon/bin:$PATH"'
 ```
 
-- Step 4: Spin up the dev server
+#### Step 4: Spin up the dev server
 
 ```bash
 moon ui:dev
