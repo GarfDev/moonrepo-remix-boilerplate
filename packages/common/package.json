@@ -4,7 +4,10 @@
   "description": "Shared package using in AC AU project.",
   "repository": "https://github.com/acau/monorepo",
   "author": "AC AU",
-  "keywords": ["acau", "common"],
+  "keywords": [
+    "acau",
+    "common"
+  ],
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "type": "module",
@@ -12,7 +15,11 @@
   "scripts": {
     "build": "tsc"
   },
-  "files": ["dist/**/*", "lib/**/*", "src/**/*"],
+  "files": [
+    "dist/**/*",
+    "lib/**/*",
+    "src/**/*"
+  ],
   "packemon": {
     "format": "lib",
     "platform": "node"
@@ -30,5 +37,6 @@
   },
   "engines": {
     "node": ">=18.12.0"
-  }
+  },
+  "packageManager": "pnpm@9.12.3"
 }
