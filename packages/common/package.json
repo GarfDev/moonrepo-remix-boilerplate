@@ -1,8 +1,8 @@
 {
   "name": "@acau/common",
   "version": "1.0.0",
-  "description": "Shared package using in AC AU project.",
-  "repository": "https://github.com/acau/monorepo",
+  "description": "Shared package using in project.",
+  "repository": "https://github.com/GarfDev/moonrepo-remix-boilerplate",
   "author": "AC AU",
   "keywords": [
     "acau",

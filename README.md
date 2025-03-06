@@ -1,6 +1,6 @@
 # Gardev Moonrepo Remix Boilerplate (Remix Applications with Moon)
 
-This repository (`garfdev-moonrepo`) is structured as a monorepo specifically designed for Remix applications, using **MoonRepo** for task management, **Biome** for linting, **pnpm** for package management, and several other powerful development tools. This Boilerplate is still in active development state, feel free to open an issue if you encounter any problems.
+This repository (`moonrepo-remix-boilerplate`) is structured as a monorepo specifically designed for Remix applications, using **MoonRepo** for task management, **Biome** for linting, **pnpm** for package management, and several other powerful development tools. This Boilerplate is still in active development state, feel free to open an issue if you encounter any problems.
 
 ---
 
