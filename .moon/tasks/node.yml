@@ -66,7 +66,6 @@ tasks:
   typecheck:
     command:
       - 'tsc'
-      - '--build'
     inputs:
       - '@group(app)'
       - '@globs(sources)'

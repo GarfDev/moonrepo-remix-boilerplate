@@ -16,12 +16,11 @@ tasks:
       runInCI: false
     deps:
       - 'common:build'
-      - 'types:typecheck'
+      - 'types:build'
     inputs:
       - '@group(app)'
       - '@group(sources)'
     outputs:
-      - '.cache'
       - 'build'
 
   dev:
@@ -32,7 +31,7 @@ tasks:
       runInCI: false
     deps:
       - 'common:build'
-      - 'types:typecheck'
+      - 'types:build'
 
   start:
     command: 'remix-serve ./build/server/index.js'
