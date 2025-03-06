@@ -12,7 +12,7 @@ This repository (`moonrepo-remix-boilerplate`) is structured as a monorepo speci
 - **Testing**: Jest
 - **Languages**: TypeScript
 
-## 🛠 Prerequisites
+## 🛠 Getting starter
 
 This progress is only tested on macOS. other platforms pls follow the [official docs](https://moonrepo.dev/docs/install).
 
